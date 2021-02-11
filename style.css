@@ -1,0 +1,80 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html {
+    font-size: 11px;
+    font-family: 'Arial', sans-serif;
+}
+body {
+    height: 100%;
+    width: 100%;
+}
+
+/* Navbar */
+
+#nav-bar {
+    display: grid;
+    grid-template-columns: 1fr 55px 55px 50px;
+    grid-template-rows: 50px;
+    grid-template-areas:". gmail images menu";
+    margin-right: 10px;
+}
+#gmail{
+    grid-area: gmail;
+    margin-right: 20px;
+}
+#images {
+    grid-area: images;
+    margin-right: 20px;
+}
+#menu {
+    grid-area: menu;
+}
+#nav-bar a {
+    text-decoration: none;
+    justify-self: center;
+    align-self: center;
+    color: rgba(0,0,0,0.87);
+    font-size: 13px;
+}
+#nav-bar a:hover {
+    text-decoration: underline;
+}
+
+/* End of Navbar */
+
+/* Main */
+
+#main {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 230px 70px;
+    grid-template-areas: ". logo ." ". search .";
+}
+
+
+#logo {
+    grid-area: logo;
+    justify-self: center;
+    align-self: end;
+    margin-bottom: 20px;
+}
+#search {
+    grid-area: search;
+    height: 45px;
+    justify-self: center;
+    align-self: center;
+    width: 85%;
+    border-radius: 50px;
+    border: 1px solid white;
+    outline: none;
+    background-color: transparent;
+    padding: 15px;
+    box-shadow: 1px 1px 8px #D0D3D4;
+}
+#main input {
+    font-size: 16px;
+}
